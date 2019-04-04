@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import Route from "react-router-dom/Route";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import MainContent from "./components/Main/MainContent";
@@ -17,56 +16,41 @@ class App extends Component {
             path="/"
             exact
             strict
-            render={() => {
-              return (
-                <div>
-                  <Header />
-                  <MainContent />
-                </div>
-              );
-            }}
+            render={() => (
+              <>
+                <Header />
+                <MainContent />
+              </>
+            )}
           />
 
           <Route
             path="/paises"
-            exact
             strict
-            render={() => {
-              return (
-                <div>
-                  <Header />
-                </div>
-              );
-            }}
+            component={Header}
           />
 
           <Route
             path="/musicos"
-            exact
             strict
-            render={() => {
-              return (
-                <div>
-                  <Header />
-                  <Users />
-                  <Footer />
-                </div>
-              );
-            }}
+            render={() => (
+              <>
+                <Header />
+                <Users />
+                <Footer />
+              </>
+            )}
           />
 
           <Route
             path="/add"
-            exact
             strict
-            render={() => {
-              return (
-                <div>
-                  <Header />
-                  <FormAdd />
-                </div>
-              );
-            }}
+            render={() => (
+              <>
+                <Header />
+                <FormAdd />
+              </>
+            )}
           />
         </Router>
       </div>
