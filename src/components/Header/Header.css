@@ -1,24 +1,3 @@
-/*Colors
-
-    Gris-Super-Claro : #f6f5f5;
-    Gris-Medio-Oscuro : #e9e4e6;
-    Azul-Medio-Claro : #3bb4c1;
-    Azul-Oscuro : #3bb4c1;
-
-    Negro-Gris : #33313b;
-
-    ---Grandiente-Metalico---
-    background: #0F2027;  
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-
-
-
-
 html,
 body {
   font-family: 'Arial', sans-serif;
