@@ -81,6 +81,12 @@ span {
   border-radius: 10px;
 
 }
+.form h1{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(48, 45, 45);
+  text-transform: uppercase;
+}
 .btn-form{
   width: 100px;
   margin-left: 190px;
