@@ -30,10 +30,6 @@ const Header = props => (
         <li>
           <Link to='/musicos'>Musicos</Link>
         </li>
-
-        <li>
-          <Link to='/add'>Agregarme</Link>
-        </li>
       </ul>
     </div>
   </nav>

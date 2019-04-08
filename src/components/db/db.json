@@ -6,7 +6,7 @@
     "img": "",
     "phone": "04249539815",
     "pais": "Venezuela",
-    "inst": "Pianista"
+    "inst": "Piano"
 
   },
   {
@@ -16,7 +16,7 @@
     "img": "",
     "phone": "123456789",
     "pais": "Ecuador",
-    "inst": "Conguero"
+    "inst": "Congas"
   },
   {
     "id": "3",
@@ -25,7 +25,7 @@
     "img": "",
     "phone": "9876543",
     "pais": "Colombia",
-    "inst": "Clarinetista"
+    "inst": "Clarinete"
   },
   {
     "id": "4",
@@ -34,6 +34,6 @@
     "img": "",
     "phone": "09000000",
     "pais": "Chile",
-    "inst": "Baterista"
+    "inst": "Bateria"
   }
 ]

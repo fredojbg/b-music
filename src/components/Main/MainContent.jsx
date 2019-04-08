@@ -13,6 +13,7 @@ class MainContent extends Component {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               ut fugiat doloremque, placeat quis possimus.
             </p>
+            <button className="btn-main">Buscar musicos</button>
           </div>
         </section>
 
@@ -23,6 +24,7 @@ class MainContent extends Component {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               ut fugiat doloremque,placeat quis possimus.
             </p>
+            <button className="btn-main">Buscar por pais</button>
           </div>
         </section>
       </div>
