@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Data from "../../db/db.json";
 import "./User.css";
 import user_img from "../../img/user_img.png";
@@ -55,10 +56,10 @@ class Users extends Component {
 
     return (
       //Html del Buscador
-      <div>
+      <div className="users-container">
         <div className="modal" id="agregarme">
           <div className="form">
-          <h1>Ingresa tus datos</h1>
+            <h1>Ingresa tus datos</h1>
             <input
               type="text"
               name="nombre"
@@ -98,12 +99,12 @@ class Users extends Component {
               Agregar
             </button>
             <a href="#" className="btn blue btn-close">
-            Cerrar
-          </a>
+              Cerrar
+            </a>
           </div>
         </div>
         <div className="buscador">
-        <h1>¡Busca un musico!</h1>
+          <h1>¡Busca un musico!</h1>
           <input
             type="search"
             className="bar-buscador"
@@ -119,34 +120,41 @@ class Users extends Component {
         </div>
 
         {/* Html + Map de Users con Buscador para los usuarios */}
+        <div className="users-articles">
+          <ReactCSSTransitionGroup
+            className="no-wrap"
+            transitionName="fade"
+            transitionEnterTimeout={600}
+            transitionLeaveTimeout={600}
+          >
+            {filteredData.map(usersDetail => (
+              <article key={usersDetail.id}>
+                <div className="img">
+                  <img className="user_img" src={user_img} alt="" />
+                </div>
 
-        {filteredData.map(usersDetail => (
-          <div key={usersDetail.id}>
-            <article>
-              <div className="img">
-                <img className="user_img" src={user_img} alt="" />
+                <div className="user-text">
+                  <h1>
+                    {usersDetail.nombre} {usersDetail.apellido}{" "}
+                  </h1>
 
-                <h1>
-                  {usersDetail.nombre} {usersDetail.apellido}{" "}
-                </h1>
+                  <span>
+                    <strong>{usersDetail.inst}</strong> {usersDetail.pais}
+                  </span>
+                </div>
 
-                <span>
-                  <strong>{usersDetail.inst}</strong> {usersDetail.pais}
-                </span>
-              </div>
-
-              <div className="btn-con">
-                <button className="btn blue" type="#">
-                  Mas informacion
-                </button>
-
-                <button className="btn" type="#">
-                  Llamar
-                </button>
-              </div>
-            </article>
-          </div>
-        ))}
+                <div className="btn-con">
+                  <button className="btn" type="#">
+                    Llamar
+                  </button>
+                  <button className="btn blue" type="#">
+                    Mas informacion
+                  </button>
+                </div>
+              </article>
+            ))}
+          </ReactCSSTransitionGroup>
+        </div>
       </div>
     );
   }

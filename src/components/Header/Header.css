@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
 }
 
@@ -58,4 +58,30 @@ ul.navUL li a {
 ul.navUL li a:hover {
   color: #000000;
   text-decoration: none;
+}
+.logo{
+  display: none;
+}
+@media (min-width: 700px) {
+  nav{
+    padding: 10px;
+  }
+  .show-menu {
+    display: none;
+  }
+  .menu-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  input.checkbox-menu[type="checkbox"] ~ div.menu-block {
+    opacity: 1;
+    visibility: visible;
+  }
+  .logo{
+    width: 60px;
+    display: block;
+  }
+  ul.navUL {
+    margin-top: 15px;
+  }
 }

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = props => (
   <footer>
-    <h4>Todos los derechos reservador por Alfredo Jose</h4>
+    <h4>Todos los derechos reservados por Alfredo Jose</h4>
   </footer>
 );
 
