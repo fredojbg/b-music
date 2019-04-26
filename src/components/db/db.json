@@ -35,5 +35,23 @@
     "phone": "09000000",
     "pais": "Chile",
     "inst": "Bateria"
+  },
+  {
+    "id": "5",
+    "nombre": "Ezio",
+    "apellido": "Mora",
+    "img": "",
+    "phone": "123123",
+    "pais": "Brasil",
+    "inst": "Keyboard Pads"
+  },
+  {
+    "id": "6",
+    "nombre": "Enrique",
+    "apellido": "Mora",
+    "img": "",
+    "phone": "982134",
+    "pais": "Brasil",
+    "inst": "Acordeon"
   }
 ]

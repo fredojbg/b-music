@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Data from "../../db/db.json";
 import "./User.css";
@@ -33,8 +34,12 @@ class Users extends Component {
     });
   };
 
+  // handleClose = e => {
+  //   this.props.history.push('/paises')
+  // }
+  //Usuario Guardado con Exito
   handleAddUsers = e => {
-    alert("Exito, Click en Cerrar");
+    this.props.history.push('/good');
     this.setState({
       data: [
         ...this.state.data,
@@ -55,7 +60,7 @@ class Users extends Component {
     );
 
     return (
-      //Html del Buscador
+      //Venta modal Add Users
       <div className="users-container">
         <div className="modal" id="agregarme">
           <div className="form">
@@ -98,9 +103,9 @@ class Users extends Component {
             <button onClick={this.handleAddUsers} className="btn btn-form">
               Agregar
             </button>
-            <a href="#" className="btn blue btn-close">
+            {/* <button onClick={this.handleClose} className="btn blue btn-close">
               Cerrar
-            </a>
+            </button> */}
           </div>
         </div>
         <div className="buscador">
@@ -160,4 +165,4 @@ class Users extends Component {
   }
 }
 
-export default Users;
+export default withRouter(Users);

@@ -21,7 +21,7 @@ const Header = props => (
 
     <div className="menu-block">
       <div className="img">
-        <img className="logo" src={user_img} alt="" srcset=""/>
+        <img className="logo" src={user_img} alt=""/>
       </div>
       <ul className="navUL">
         <li>

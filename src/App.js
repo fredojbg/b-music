@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
+import GoodAddUsers from "./components/Goods/GoodAddUsers";
 import MainContent from "./components/Main/MainContent";
 // import FormAdd from "./components/Main/UsersDetails/FormAdd/FormAdd";
 import Footer from "./components/Footer/Footer";
@@ -40,6 +41,11 @@ class App extends Component {
                 <Footer />
               </>
             )}
+          />
+          <Route
+            path="/good"
+            strict
+            component={GoodAddUsers}
           />
 
           {/* <Route
